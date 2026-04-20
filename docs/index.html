@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chamo — Indie Game Developer</title>
+<meta name="description" content="Desarrollador indie de juegos móviles. Creador de Sticky Frog y Chroma Core.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="container">
+    <h1>Chamo</h1>
+    <p class="tagline">Desarrollador indie de juegos móviles</p>
+    <p class="lead">Creo juegos casual y arcade para Android e iOS(proximamente) con el motor Godot.</p>
+  </div>
+</header>
+
+<main class="container">
+
+  <section id="apps">
+    <h2>Mis aplicaciones</h2>
+
+    <article class="app-card">
+      <img class="app-icon" src="assets/sticky_frog_icon.png" alt="Icono de Sticky Frog">
+      <div class="app-body">
+        <h3>Sticky Frog</h3>
+        <span class="badge badge-live">Publicado</span>
+        <p>Arcade horizontal de rana saltarina: esquiva obstáculos, recoge monedas y desbloquea skins. Juego casual para sesiones cortas.</p>
+        <ul class="meta">
+          <li><strong>Paquete:</strong> com.chamo.sticky_frog</li>
+          <li><strong>Plataforma:</strong> Android</li>
+          <li><strong>Motor:</strong> Godot Engine</li>
+        </ul>
+        <p class="app-links">
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.chamo.sticky_frog" target="_blank" rel="noopener">Ver en Google Play &rarr;</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="app-card">
+      <img class="app-icon" src="assets/chroma_core_icon.png" alt="Icono de Chroma Core">
+      <div class="app-body">
+        <h3>Chroma Core</h3>
+        <span class="badge badge-beta">En pruebas</span>
+        <p>Juego hyper-casual de ritmo y precisión: apila cilindros sincronizando el toque con un indicador oscilante. Gana combos con toques "perfectos".</p>
+        <ul class="meta">
+          <li><strong>Plataforma:</strong> Android</li>
+          <li><strong>Motor:</strong> Godot Engine</li>
+          <li><strong>Estado:</strong> Beta cerrada</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>Para soporte, dudas, informes de bugs o asuntos comerciales:</p>
+    <p class="contact-email">
+      <a href="mailto:chamod3v@gmail.com">chamod3v@gmail.com</a>
+    </p>
+  </section>
+
+  <section id="legal">
+    <h2>Legal</h2>
+    <ul class="legal-links">
+      <li><a href="privacy.html">Política de privacidad</a></li>
+      <li><a href="terms.html">Términos de uso</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Chamo. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
