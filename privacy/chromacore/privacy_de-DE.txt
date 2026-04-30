@@ -1,0 +1,78 @@
+Datenschutzerklarung fur ChromaCore
+Letzte Aktualisierung: 30. April 2026
+
+Danke, dass du ChromaCore spielst. Diese Richtlinie erklaert, welche Daten verarbeitet werden, warum und welche Optionen du hast.
+
+1. Verantwortlicher
+ChromaCore
+Datenschutzkontakt: wcg.privacy@gmail.com
+
+2. Geltungsbereich
+Diese Richtlinie gilt fur das Android-Spiel ChromaCore.
+
+3. Daten, die wir verarbeiten konnen
+A) Spieldaten (lokal)
+- Highscore, verfuegbare Energie, Datum der letzten taeglichen Aufladung, Tutorial-Fortschritt und Audio-Einstellungen.
+
+B) Google Play Games Daten (bei Login)
+- Google Play Games Spieler-ID und Profilname.
+- Uebertragung von Punktzahlen ans Leaderboard und zugehoerige Metadaten.
+
+C) Werbe- und Monetarisierungsdaten (Google AdMob)
+- Advertising ID / AD_ID und Geraete-IDs, die von Google-Werbe-SDKs verwendet werden.
+- Signale zu Anfrage, Laden, Impression und Interaktion fuer Rewarded Ads.
+- Ungefaehrer Standort aus Netzwerk/IP (kein praezises GPS aus der App).
+
+D) Eigene Analytics-Telemetrie
+- Keine. ChromaCore sendet keine eigene Analytics-Telemetrie. In der App ist kein Firebase Analytics oder vergleichbares SDK eingebettet.
+
+4. Zwecke
+Wir verarbeiten Daten, um:
+- Kernfunktionen des Spiels und lokalen Fortschritt bereitzustellen.
+- Google Play Games Funktionen (Login und Leaderboard) zu ermoeglichen.
+- Rewarded Ads anzuzeigen und Anzeigenleistung zu messen.
+- Missbrauch, Betrug und Richtlinienverstoesse zu verhindern.
+
+5. Einwilligung und Datenschutzoptionen (EWR, UK, Schweiz)
+Wenn gesetzlich erforderlich, fragen wir Einwilligung ueber Google UMP (User Messaging Platform) ab.
+Datenschutzoptionen kannst du ueber den Privacy-Button im Hauptmenue des Spiels erneut oeffnen.
+
+Wichtiges Verhalten in dieser App:
+- Wenn die Einwilligung erteilt oder nicht erforderlich ist, koennen Anzeigen normal laufen.
+- Wenn keine Einwilligung erteilt wurde, koennen weiterhin nicht-personalisierte/begrenzte Anzeigen angezeigt werden, abhaengig von Google-Einstellungen und -Verfuegbarkeit.
+
+6. Dienste Dritter
+ChromaCore nutzt folgende Google-Dienste:
+- Google Play Games Services
+- Google AdMob
+
+Die Verarbeitung durch Google unterliegt Googles eigenen Richtlinien:
+- Google Privacy Policy: https://policies.google.com/privacy
+- Google Play Games Services Terms: https://developer.android.com/games/pgs/terms
+- AdMob Policy: https://support.google.com/admob/answer/6128543
+
+7. Datenweitergabe
+Wir verkaufen keine personenbezogenen Daten.
+Daten, die fur Google Play Games Funktionen und Werbe-Monetarisierung erforderlich sind, koennen mit Google als Dienstleister geteilt werden.
+
+8. Speicherung und Aufbewahrung
+- Lokale Spieldaten bleiben auf deinem Geraet, bis App-Daten geloescht oder die App deinstalliert wird.
+- Google Play Games und AdMob Daten koennen gemaess Google-Richtlinien gespeichert werden.
+- Supportanfragen per E-Mail koennen so lange gespeichert werden, wie es zur Bearbeitung deiner Anfrage und zur Erfuellung rechtlicher Pflichten erforderlich ist.
+
+9. Rechte und Loeschanfragen
+Primaerer Kanal (Anfrageportal):
+https://forms.gle/Xr1puNcL5sDi64fD7
+
+Alternativer Kanal (Backup-E-Mail):
+wcg.privacy@gmail.com
+
+Wichtiger Hinweis zur Identifizierung:
+- ChromaCore erhebt keine eigene Telemetrie, daher gibt es app-seitig keinen Datensatz, der mit einer realen Identitaet verknuepft ist und den wir bereitstellen oder loeschen koennten.
+- Wenn deine Anfrage Google Play Games, AdMob oder Google-Konto Daten betrifft, kann zusaetzlich die Nutzung der Google-Kontotools erforderlich sein.
+
+10. Kinder
+ChromaCore richtet sich nicht speziell an Kinder unter 13 Jahren.
+
+11. Aenderungen dieser Richtlinie
+Wir koennen diese Richtlinie bei rechtlichen, technischen oder Produktaenderungen aktualisieren. Die aktuelle Version wird unter dieser URL veroeffentlicht.

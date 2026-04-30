@@ -1,10 +1,50 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Política de Privacidad — Chamo</title>
 <link rel="stylesheet" href="style.css">
+<style>
+  .selector-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+    margin: 1rem 0 1.75rem;
+  }
+  .selector-bar label {
+    color: var(--fg-muted);
+    font-size: 0.9rem;
+    margin-right: 0.4rem;
+  }
+  .selector-bar select {
+    background: var(--bg);
+    color: var(--fg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+  }
+  .selector-bar select:focus {
+    outline: 2px solid var(--accent-alt);
+    outline-offset: 1px;
+  }
+  .privacy-block { display: none; }
+  .privacy-block.active { display: block; }
+  .lang-block { display: none; }
+  .lang-block.active { display: block; }
+  .doc-meta {
+    color: var(--fg-muted);
+    font-size: 0.9rem;
+    margin: 0 0 1rem;
+  }
+</style>
 </head>
 <body>
 <header class="hero">
@@ -17,61 +57,517 @@
 <main class="container page-content">
   <a class="back-link" href="index.html">&larr; Volver</a>
 
-  <p><strong>Última actualización:</strong> <span id="updated"></span></p>
+  <div class="selector-bar">
+    <div>
+      <label for="game-select">Juego / Game:</label>
+      <select id="game-select">
+        <option value="sticky_frog">Sticky Frog</option>
+        <option value="chromacore">Chroma Core</option>
+      </select>
+    </div>
+    <div>
+      <label for="lang-select">Idioma / Language:</label>
+      <select id="lang-select">
+        <option value="es-ES">Español (España)</option>
+        <option value="en-US">English (US)</option>
+        <option value="en-GB">English (UK)</option>
+        <option value="fr-FR">Français (France)</option>
+        <option value="de-DE">Deutsch (Deutschland)</option>
+      </select>
+    </div>
+  </div>
 
-  <p>Esta política describe cómo Chamo ("nosotros", "el desarrollador") gestiona la información en las aplicaciones <strong>Sticky Frog</strong> y <strong>Chroma Core</strong> ("las aplicaciones").</p>
+  <!-- ========== STICKY FROG ========== -->
+<article class="privacy-block" data-game="sticky_frog">
+  <section class="lang-block" data-lang="es-ES">
+    <h2>Sticky Frog</h2>
+    <p class="effective">Última actualización: 30 de abril de 2026</p>
+    <p>Sticky Frog es un juego para móviles publicado por ChamoD3v. Esta política explica cómo se trata la información relacionada con Sticky Frog.</p>
+    <h3>Información que trata Sticky Frog</h3>
+    <ul>
+      <li><strong>Datos locales del juego:</strong> progreso, récords, monedas, objetos desbloqueados, aspecto seleccionado, ajustes y estado básico de la partida. Estos datos se guardan en tu dispositivo.</li>
+      <li><strong>Google Play Games, si inicias sesión:</strong> identidad de jugador, logros, marcadores y partidas guardadas o funciones similares gestionadas por Google.</li>
+      <li><strong>Google AdMob:</strong> datos necesarios para solicitar, entregar, limitar, medir y proteger anuncios, incluyendo identificadores publicitarios, datos del dispositivo, interacciones con anuncios, dirección IP aproximada y señales de consentimiento.</li>
+      <li><strong>Mensajes de soporte:</strong> si nos contactas, trataremos la información que incluyas en tu mensaje para responderte.</li>
+    </ul>
+    <h3>Datos enviados por la app</h3>
+    <p>Sticky Frog solo envía a Google los datos necesarios para Google Play Games, si inicias sesión, y para Google AdMob. El progreso, récords y ajustes del juego se guardan localmente en tu dispositivo.</p>
+    <h3>Publicidad y consentimiento</h3>
+    <p>Sticky Frog usa Google AdMob. En las regiones donde corresponde, se muestra el formulario de consentimiento de Google. Según tu elección y la normativa aplicable, AdMob puede mostrar anuncios personalizados, no personalizados o limitados. Puedes cambiar tus preferencias desde los ajustes del dispositivo o desde las opciones de privacidad del juego cuando estén disponibles.</p>
+    <h3>Servicios de terceros</h3>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad de Google</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Privacidad de Google AdMob</a></li>
+      <li><a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Términos de Google Play</a></li>
+    </ul>
+    <h3>Conservación y control</h3>
+    <p>Los datos locales permanecen en tu dispositivo hasta que los borres, restablezcas el progreso o desinstales el juego. Los datos gestionados por Google se conservan según las políticas de Google y tus ajustes de cuenta.</p>
+    <h3>Menores</h3>
+    <p>Sticky Frog no está diseñado para recopilar información personal de menores de forma directa. Si crees que un menor nos ha enviado datos personales, contáctanos para revisarlo.</p>
+    <h3>Contacto</h3>
+    <p>Para consultas de privacidad: <a href="mailto:chamo91@outlook.com">chamo91@outlook.com</a>.</p>
+  </section>
 
-  <h2>1. Información que recopilamos</h2>
-  <p>Las aplicaciones recopilan datos limitados y anónimos para mejorar la experiencia de juego:</p>
-  <ul>
-    <li><strong>Datos de uso anónimos (telemetría):</strong> eventos de sesión, inicios/fines de partida, records, monedas obtenidas, duración de sesión, rendimiento (FPS).</li>
-    <li><strong>Identificadores técnicos:</strong> identificador de instalación anónimo, versión de la app, día desde la instalación.</li>
-    <li><strong>Identificador publicitario (AAID):</strong> usado únicamente para servir anuncios no personalizados en versiones con publicidad.</li>
-  </ul>
-  <p>No recopilamos nombre, correo, ubicación precisa, contactos ni datos personales identificables.</p>
+  <section class="lang-block" data-lang="en-US">
+    <h2>Sticky Frog</h2>
+    <p class="effective">Last updated: April 30, 2026</p>
+    <p>Sticky Frog is a mobile game published by ChamoD3v. This policy explains how information related to Sticky Frog is handled.</p>
+    <h3>Information Sticky Frog Processes</h3>
+    <ul>
+      <li><strong>Local game data:</strong> progress, high scores, coins, unlocked items, selected skin, settings, and basic game state. This data is stored on your device.</li>
+      <li><strong>Google Play Games, if you sign in:</strong> player identity, achievements, leaderboards, saved games, or similar features managed by Google.</li>
+      <li><strong>Google AdMob:</strong> data needed to request, deliver, cap, measure, and protect ads, including advertising identifiers, device data, ad interactions, approximate IP-based location, and consent signals.</li>
+      <li><strong>Support messages:</strong> if you contact us, we process the information you include so we can respond.</li>
+    </ul>
+    <h3>Data Sent by the App</h3>
+    <p>Sticky Frog only sends Google the data needed for Google Play Games, if you sign in, and Google AdMob. Game progress, high scores, and settings are stored locally on your device.</p>
+    <h3>Advertising and Consent</h3>
+    <p>Sticky Frog uses Google AdMob. Where required, Google's consent form is shown. Depending on your choice and applicable law, AdMob may show personalized, non-personalized, or limited ads. You can change preferences through device settings or in-game privacy options when available.</p>
+    <h3>Third-Party Services</h3>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google AdMob Privacy</a></li>
+      <li><a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play Terms</a></li>
+    </ul>
+    <h3>Retention and Control</h3>
+    <p>Local data remains on your device until you delete it, reset progress, or uninstall the game. Data handled by Google is retained according to Google's policies and your account settings.</p>
+    <h3>Children</h3>
+    <p>Sticky Frog is not designed to directly collect personal information from children. If you believe a child has sent us personal data, contact us so we can review it.</p>
+    <h3>Contact</h3>
+    <p>Privacy questions: <a href="mailto:chamo91@outlook.com">chamo91@outlook.com</a>.</p>
+  </section>
 
-  <h2>2. Cómo usamos la información</h2>
-  <ul>
-    <li>Mejorar el balance y rendimiento del juego.</li>
-    <li>Detectar errores y bloqueos.</li>
-    <li>Mostrar anuncios (en versiones gratuitas).</li>
-  </ul>
+  <section class="lang-block" data-lang="en-GB">
+    <h2>Sticky Frog</h2>
+    <p class="effective">Last updated: 30 April 2026</p>
+    <p>Sticky Frog is a mobile game published by ChamoD3v. This policy explains how information related to Sticky Frog is handled.</p>
+    <h3>Information Sticky Frog Processes</h3>
+    <ul>
+      <li><strong>Local game data:</strong> progress, high scores, coins, unlocked items, selected skin, settings, and basic game state. This data is stored on your device.</li>
+      <li><strong>Google Play Games, if you sign in:</strong> player identity, achievements, leaderboards, saved games, or similar features managed by Google.</li>
+      <li><strong>Google AdMob:</strong> data needed to request, deliver, cap, measure, and protect adverts, including advertising identifiers, device data, advert interactions, approximate IP-based location, and consent signals.</li>
+      <li><strong>Support messages:</strong> if you contact us, we process the information you include so we can respond.</li>
+    </ul>
+    <h3>Data Sent by the App</h3>
+    <p>Sticky Frog only sends Google the data needed for Google Play Games, if you sign in, and Google AdMob. Game progress, high scores, and settings are stored locally on your device.</p>
+    <h3>Advertising and Consent</h3>
+    <p>Sticky Frog uses Google AdMob. Where required, Google's consent form is shown. Depending on your choice and applicable law, AdMob may show personalised, non-personalised, or limited adverts. You can change preferences through device settings or in-game privacy options when available.</p>
+    <h3>Third-Party Services</h3>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google AdMob Privacy</a></li>
+      <li><a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play Terms</a></li>
+    </ul>
+    <h3>Retention and Control</h3>
+    <p>Local data remains on your device until you delete it, reset progress, or uninstall the game. Data handled by Google is retained according to Google's policies and your account settings.</p>
+    <h3>Children</h3>
+    <p>Sticky Frog is not designed to directly collect personal information from children. If you believe a child has sent us personal data, contact us so we can review it.</p>
+    <h3>Contact</h3>
+    <p>Privacy questions: <a href="mailto:chamo91@outlook.com">chamo91@outlook.com</a>.</p>
+  </section>
 
-  <h2>3. Servicios de terceros</h2>
-  <p>Las aplicaciones pueden utilizar los siguientes servicios, cada uno con su propia política de privacidad:</p>
-  <ul>
-    <li><strong>Google Firebase / Analytics</strong> — telemetría de uso.</li>
-    <li><strong>Google AdMob</strong> — anuncios (si aplica).</li>
-    <li><strong>Google Play Services</strong> — distribución y servicios de plataforma.</li>
-  </ul>
+  <section class="lang-block" data-lang="fr-FR">
+    <h2>Sticky Frog</h2>
+    <p class="effective">Dernière mise à jour : 30 avril 2026</p>
+    <p>Sticky Frog est un jeu mobile publié par ChamoD3v. Cette politique explique comment les informations liées à Sticky Frog sont traitées.</p>
+    <h3>Informations traitées par Sticky Frog</h3>
+    <ul>
+      <li><strong>Données locales du jeu :</strong> progression, meilleurs scores, pièces, éléments déverrouillés, apparence sélectionnée, paramètres et état de base de la partie. Ces données sont stockées sur votre appareil.</li>
+      <li><strong>Google Play Games, si vous vous connectez :</strong> identité de joueur, succès, classements, sauvegardes ou fonctions similaires gérées par Google.</li>
+      <li><strong>Google AdMob :</strong> données nécessaires pour demander, diffuser, limiter, mesurer et protéger les annonces, y compris les identifiants publicitaires, données de l'appareil, interactions avec les annonces, localisation approximative basée sur l'adresse IP et signaux de consentement.</li>
+      <li><strong>Messages d'assistance :</strong> si vous nous contactez, nous traitons les informations incluses dans votre message afin de vous répondre.</li>
+    </ul>
+    <h3>Données envoyées par l'application</h3>
+    <p>Sticky Frog envoie uniquement à Google les données nécessaires à Google Play Games, si vous vous connectez, et à Google AdMob. La progression, les meilleurs scores et les paramètres du jeu sont stockés localement sur votre appareil.</p>
+    <h3>Publicité et consentement</h3>
+    <p>Sticky Frog utilise Google AdMob. Lorsque cela est requis, le formulaire de consentement de Google est affiché. Selon votre choix et la loi applicable, AdMob peut afficher des annonces personnalisées, non personnalisées ou limitées. Vous pouvez modifier vos préférences dans les paramètres de l'appareil ou dans les options de confidentialité du jeu lorsqu'elles sont disponibles.</p>
+    <h3>Services tiers</h3>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Politique de confidentialité de Google</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Confidentialité Google AdMob</a></li>
+      <li><a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Conditions Google Play</a></li>
+    </ul>
+    <h3>Conservation et contrôle</h3>
+    <p>Les données locales restent sur votre appareil jusqu'à ce que vous les supprimiez, réinitialisiez la progression ou désinstalliez le jeu. Les données traitées par Google sont conservées conformément aux règles de Google et aux paramètres de votre compte.</p>
+    <h3>Enfants</h3>
+    <p>Sticky Frog n'est pas conçu pour collecter directement des informations personnelles auprès des enfants. Si vous pensez qu'un enfant nous a envoyé des données personnelles, contactez-nous afin que nous puissions l'examiner.</p>
+    <h3>Contact</h3>
+    <p>Questions relatives à la confidentialité : <a href="mailto:chamo91@outlook.com">chamo91@outlook.com</a>.</p>
+  </section>
 
-  <h2>4. Compras dentro de la app</h2>
-  <p>Las compras se procesan a través de Google Play. No recibimos ni almacenamos datos de pago.</p>
+  <section class="lang-block" data-lang="de-DE">
+    <h2>Sticky Frog</h2>
+    <p class="effective">Zuletzt aktualisiert: 30. April 2026</p>
+    <p>Sticky Frog ist ein mobiles Spiel, das von ChamoD3v veröffentlicht wird. Diese Richtlinie erklärt, wie Informationen im Zusammenhang mit Sticky Frog verarbeitet werden.</p>
+    <h3>Informationen, die Sticky Frog verarbeitet</h3>
+    <ul>
+      <li><strong>Lokale Spieldaten:</strong> Fortschritt, Highscores, Münzen, freigeschaltete Gegenstände, ausgewähltes Aussehen, Einstellungen und grundlegender Spielstatus. Diese Daten werden auf deinem Gerät gespeichert.</li>
+      <li><strong>Google Play Games, wenn du dich anmeldest:</strong> Spieleridentität, Erfolge, Bestenlisten, gespeicherte Spiele oder ähnliche von Google verwaltete Funktionen.</li>
+      <li><strong>Google AdMob:</strong> Daten, die zum Anfordern, Ausliefern, Begrenzen, Messen und Schützen von Werbung erforderlich sind, einschließlich Werbe-IDs, Gerätedaten, Anzeigeninteraktionen, ungefährer IP-basierter Standortdaten und Zustimmungssignale.</li>
+      <li><strong>Support-Nachrichten:</strong> Wenn du uns kontaktierst, verarbeiten wir die Informationen in deiner Nachricht, um zu antworten.</li>
+    </ul>
+    <h3>Von der App gesendete Daten</h3>
+    <p>Sticky Frog sendet nur die Daten an Google, die für Google Play Games, sofern du dich anmeldest, und Google AdMob erforderlich sind. Spielfortschritt, Highscores und Einstellungen werden lokal auf deinem Gerät gespeichert.</p>
+    <h3>Werbung und Zustimmung</h3>
+    <p>Sticky Frog verwendet Google AdMob. Wo erforderlich, wird das Zustimmungsformular von Google angezeigt. Abhängig von deiner Auswahl und dem geltenden Recht kann AdMob personalisierte, nicht personalisierte oder eingeschränkte Anzeigen anzeigen. Du kannst deine Einstellungen über die Geräteeinstellungen oder über Datenschutzoptionen im Spiel ändern, sofern verfügbar.</p>
+    <h3>Drittanbieterdienste</h3>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google-Datenschutzerklärung</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google AdMob Datenschutz</a></li>
+      <li><a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play-Nutzungsbedingungen</a></li>
+    </ul>
+    <h3>Aufbewahrung und Kontrolle</h3>
+    <p>Lokale Daten bleiben auf deinem Gerät, bis du sie löschst, den Fortschritt zurücksetzt oder das Spiel deinstallierst. Von Google verarbeitete Daten werden gemäß den Richtlinien von Google und deinen Kontoeinstellungen aufbewahrt.</p>
+    <h3>Kinder</h3>
+    <p>Sticky Frog ist nicht darauf ausgelegt, direkt personenbezogene Daten von Kindern zu erfassen. Wenn du glaubst, dass ein Kind uns personenbezogene Daten gesendet hat, kontaktiere uns bitte, damit wir dies prüfen können.</p>
+    <h3>Kontakt</h3>
+    <p>Fragen zum Datenschutz: <a href="mailto:chamo91@outlook.com">chamo91@outlook.com</a>.</p>
+  </section>
+</article>
 
-  <h2>5. Niños</h2>
-  <p>Las aplicaciones no están dirigidas a menores de 13 años. No recopilamos intencionalmente datos personales de menores.</p>
+  <!-- ========== CHROMA CORE ========== -->
+  <article class="privacy-block" data-game="chromacore">
 
-  <h2>6. Seguridad</h2>
-  <p>Los datos anónimos se transmiten mediante HTTPS. No almacenamos información personal identificable en nuestros sistemas.</p>
+    <section class="lang-block" data-lang="es-ES">
+      <h2>Política de Privacidad de Chroma Core</h2>
+      <p class="doc-meta">Última actualización: 30 de abril de 2026</p>
+      <p>Gracias por jugar a Chroma Core. Esta política explica qué datos se tratan, para qué se usan y qué opciones tienes.</p>
+      <h2>1. Responsable</h2>
+      <p>Chroma Core<br><strong>Contacto de privacidad:</strong> wcg.privacy@gmail.com</p>
+      <h2>2. Alcance</h2>
+      <p>Esta política aplica al juego Chroma Core para Android.</p>
+      <h2>3. Datos que podemos tratar</h2>
+      <ul>
+        <li>Datos del juego almacenados localmente: récord de puntuación, energía disponible, fecha de la última recarga diaria, progreso del tutorial y ajustes de audio.</li>
+        <li>Datos de Google Play Games (si inicias sesión): identificador de jugador, perfil y ranking.</li>
+        <li>Datos de publicidad (Google AdMob): Advertising ID / AD_ID, señales de solicitud/carga/impresión/interacción para anuncios recompensados.</li>
+        <li>Ubicación aproximada inferida por red/IP (la app no usa GPS preciso).</li>
+      </ul>
+      <p><strong>Chroma Core no envía telemetría analítica propia.</strong> No hay Firebase Analytics ni equivalente integrado en el juego.</p>
+      <h2>4. Finalidades</h2>
+      <ul>
+        <li>Proporcionar funciones base del juego y progreso local.</li>
+        <li>Habilitar Google Play Games (login y ranking).</li>
+        <li>Mostrar anuncios recompensados y medir su rendimiento.</li>
+        <li>Prevenir abuso, fraude e incumplimientos de política.</li>
+      </ul>
+      <h2>5. Consentimiento y opciones de privacidad (EEE, Reino Unido y Suiza)</h2>
+      <p>Cuando la ley lo exige, solicitamos consentimiento mediante Google UMP. Puedes volver a abrir las opciones desde el botón Privacidad en el menú principal del juego.</p>
+      <ul>
+        <li>Con consentimiento otorgado o no requerido: los anuncios pueden funcionar con normalidad.</li>
+        <li>Sin consentimiento: pueden mostrarse anuncios no personalizados/limitados, según configuración y disponibilidad de Google.</li>
+      </ul>
+      <h2>6. Servicios de terceros</h2>
+      <p>Chroma Core usa Google Play Games Services y Google AdMob.</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://developer.android.com/games/pgs/terms">Google Play Games Services Terms</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543">AdMob Policy</a></li>
+      </ul>
+      <h2>7. Compartición de datos</h2>
+      <p>No vendemos datos personales. Los datos necesarios para funciones de Google Play Games y monetización por anuncios pueden compartirse con Google como proveedor de servicio.</p>
+      <h2>8. Almacenamiento y conservación</h2>
+      <ul>
+        <li>Los datos locales del juego permanecen en tu dispositivo hasta borrar datos o desinstalar.</li>
+        <li>Los datos de Google Play Games y AdMob pueden conservarse según políticas de Google.</li>
+        <li>Las solicitudes de soporte por email pueden conservarse el tiempo necesario para gestionarlas y cumplir obligaciones legales.</li>
+      </ul>
+      <h2>9. Tus derechos y solicitudes de eliminación</h2>
+      <p>Canal principal: <a href="https://forms.gle/Xr1puNcL5sDi64fD7">Abrir formulario de privacidad</a></p>
+      <p>Canal alternativo (email): <strong>wcg.privacy@gmail.com</strong></p>
+      <ul>
+        <li>Chroma Core no recopila telemetría propia, por lo que no existe en el lado de la app un conjunto de datos vinculado a una identidad real que podamos entregar o borrar.</li>
+        <li>Si tu solicitud afecta a datos en Google Play Games, AdMob o cuenta Google, también puede ser necesario usar las herramientas de control de cuenta de Google.</li>
+      </ul>
+      <h2>10. Menores</h2>
+      <p>Chroma Core no está dirigido específicamente a menores de 13 años.</p>
+      <h2>11. Cambios en esta política</h2>
+      <p>Podemos actualizar esta política por cambios legales, técnicos o de producto. La versión vigente se publicará en esta URL.</p>
+    </section>
 
-  <h2>7. Cambios en esta política</h2>
-  <p>Podemos actualizar esta política. La fecha al inicio indica la última modificación.</p>
+    <section class="lang-block" data-lang="en-US">
+      <h2>Chroma Core Privacy Policy</h2>
+      <p class="doc-meta">Last updated: April 30, 2026</p>
+      <p>Thanks for playing Chroma Core. This policy explains what data is processed, why, and what choices you have.</p>
+      <h2>1. Controller</h2>
+      <p>Chroma Core<br><strong>Privacy contact:</strong> wcg.privacy@gmail.com</p>
+      <h2>2. Scope</h2>
+      <p>This policy applies to the Android game Chroma Core.</p>
+      <h2>3. Data we may process</h2>
+      <ul>
+        <li>Game data stored locally: high score, available energy, last daily recharge date, tutorial progress and audio settings.</li>
+        <li>Google Play Games data (if signed in): player identifier, profile and leaderboard metadata.</li>
+        <li>Advertising data (Google AdMob): Advertising ID / AD_ID and ad request/load/impression/interaction signals for rewarded ads.</li>
+        <li>Approximate location inferred by network/IP (no precise GPS from this app).</li>
+      </ul>
+      <p><strong>Chroma Core does not send first-party analytics telemetry.</strong> There is no Firebase Analytics or equivalent embedded in the game.</p>
+      <h2>4. Purposes</h2>
+      <ul>
+        <li>Provide core gameplay and local progress.</li>
+        <li>Enable Google Play Games features (sign-in and leaderboard).</li>
+        <li>Show rewarded ads and measure ad performance.</li>
+        <li>Prevent abuse, fraud and policy violations.</li>
+      </ul>
+      <h2>5. Consent and privacy choices (EEA, UK, Switzerland)</h2>
+      <p>Where legally required, we request consent via Google UMP. You can reopen privacy options from the in-game Privacy button on the main menu.</p>
+      <ul>
+        <li>If consent is granted or not required: ads may operate normally.</li>
+        <li>If consent is not granted: non-personalized/limited ads may still be shown, depending on Google settings and availability.</li>
+      </ul>
+      <h2>6. Third-party services</h2>
+      <p>Chroma Core uses Google Play Games Services and Google AdMob.</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://developer.android.com/games/pgs/terms">Google Play Games Services Terms</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543">AdMob Policy</a></li>
+      </ul>
+      <h2>7. Data sharing</h2>
+      <p>We do not sell personal data. Data required for Google Play Games features and ad monetization may be shared with Google as service provider.</p>
+      <h2>8. Storage and retention</h2>
+      <ul>
+        <li>Local game data remains on your device until app data is deleted or app is uninstalled.</li>
+        <li>Google Play Games and AdMob data may be retained according to Google policies.</li>
+        <li>Email support requests may be retained as needed to handle your request and legal obligations.</li>
+      </ul>
+      <h2>9. Your rights and deletion requests</h2>
+      <p>Primary channel: <a href="https://forms.gle/Xr1puNcL5sDi64fD7">Open privacy request form</a></p>
+      <p>Backup channel (email): <strong>wcg.privacy@gmail.com</strong></p>
+      <ul>
+        <li>Chroma Core does not collect first-party telemetry, so there is no app-side dataset linked to a real-world identity that we could provide or delete.</li>
+        <li>If your request involves Google Play Games, AdMob or Google account data, you may also need to use Google account controls.</li>
+      </ul>
+      <h2>10. Children</h2>
+      <p>Chroma Core is not specifically directed to children under 13.</p>
+      <h2>11. Changes to this policy</h2>
+      <p>We may update this policy for legal, technical or product changes. The latest version will be published at this URL.</p>
+    </section>
 
-  <h2>8. Contacto</h2>
-  <p>Para dudas sobre esta política escribe a:
-    <a href="mailto:chamod3v@gmail.com">chamod3v@gmail.com</a>
+    <section class="lang-block" data-lang="en-GB">
+      <h2>Chroma Core Privacy Policy</h2>
+      <p class="doc-meta">Last updated: 30 April 2026</p>
+      <p>Thanks for playing Chroma Core. This policy explains what data is processed, why, and what choices you have.</p>
+      <h2>1. Controller</h2>
+      <p>Chroma Core<br><strong>Privacy contact:</strong> wcg.privacy@gmail.com</p>
+      <h2>2. Scope</h2>
+      <p>This policy applies to the Android game Chroma Core.</p>
+      <h2>3. Data we may process</h2>
+      <ul>
+        <li>Game data stored locally: high score, available energy, last daily recharge date, tutorial progress and audio settings.</li>
+        <li>Google Play Games data (if signed in): player identifier, profile and leaderboard metadata.</li>
+        <li>Advertising data (Google AdMob): Advertising ID / AD_ID and ad request/load/impression/interaction signals for rewarded ads.</li>
+        <li>Approximate location inferred by network/IP (no precise GPS from this app).</li>
+      </ul>
+      <p><strong>Chroma Core does not send first-party analytics telemetry.</strong> There is no Firebase Analytics or equivalent embedded in the game.</p>
+      <h2>4. Purposes</h2>
+      <ul>
+        <li>Provide core gameplay and local progress.</li>
+        <li>Enable Google Play Games features (sign-in and leaderboard).</li>
+        <li>Show rewarded ads and measure ad performance.</li>
+        <li>Prevent abuse, fraud and policy violations.</li>
+      </ul>
+      <h2>5. Consent and privacy choices (EEA, UK, Switzerland)</h2>
+      <p>Where legally required, we request consent via Google UMP. You can reopen privacy options from the in-game Privacy button on the main menu.</p>
+      <ul>
+        <li>If consent is granted or not required: ads may operate normally.</li>
+        <li>If consent is not granted: non-personalised/limited ads may still be shown, depending on Google settings and availability.</li>
+      </ul>
+      <h2>6. Third-party services</h2>
+      <p>Chroma Core uses Google Play Games Services and Google AdMob.</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://developer.android.com/games/pgs/terms">Google Play Games Services Terms</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543">AdMob Policy</a></li>
+      </ul>
+      <h2>7. Data sharing</h2>
+      <p>We do not sell personal data. Data required for Google Play Games features and ad monetisation may be shared with Google as service provider.</p>
+      <h2>8. Storage and retention</h2>
+      <ul>
+        <li>Local game data remains on your device until app data is deleted or app is uninstalled.</li>
+        <li>Google Play Games and AdMob data may be retained according to Google policies.</li>
+        <li>Email support requests may be retained as needed to handle your request and legal obligations.</li>
+      </ul>
+      <h2>9. Your rights and deletion requests</h2>
+      <p>Primary channel: <a href="https://forms.gle/Xr1puNcL5sDi64fD7">Open privacy request form</a></p>
+      <p>Backup channel (email): <strong>wcg.privacy@gmail.com</strong></p>
+      <ul>
+        <li>Chroma Core does not collect first-party telemetry, so there is no app-side dataset linked to a real-world identity that we could provide or delete.</li>
+        <li>If your request involves Google Play Games, AdMob or Google account data, you may also need to use Google account controls.</li>
+      </ul>
+      <h2>10. Children</h2>
+      <p>Chroma Core is not specifically directed to children under 13.</p>
+      <h2>11. Changes to this policy</h2>
+      <p>We may update this policy for legal, technical or product changes. The latest version will be published at this URL.</p>
+    </section>
+
+    <section class="lang-block" data-lang="fr-FR">
+      <h2>Politique de confidentialité de Chroma Core</h2>
+      <p class="doc-meta">Dernière mise à jour : 30 avril 2026</p>
+      <p>Merci de jouer à Chroma Core. Cette politique explique quelles données sont traitées, pourquoi, et quelles options vous avez.</p>
+      <h2>1. Responsable</h2>
+      <p>Chroma Core<br><strong>Contact confidentialité :</strong> wcg.privacy@gmail.com</p>
+      <h2>2. Portée</h2>
+      <p>Cette politique s'applique au jeu Android Chroma Core.</p>
+      <h2>3. Données que nous pouvons traiter</h2>
+      <ul>
+        <li>Données du jeu stockées localement : record de score, énergie disponible, date de la dernière recharge quotidienne, progression du tutoriel et réglages audio.</li>
+        <li>Données Google Play Games (si connexion) : identifiant joueur, profil et métadonnées de classement.</li>
+        <li>Données publicitaires (Google AdMob) : Advertising ID / AD_ID et signaux de requête/chargement/impression/interaction pour les annonces récompensées.</li>
+        <li>Localisation approximative déduite du réseau/IP (pas de GPS précis via l'app).</li>
+      </ul>
+      <p><strong>Chroma Core n'envoie pas de télémétrie analytique propre.</strong> Aucun SDK Firebase Analytics ni équivalent n'est intégré dans le jeu.</p>
+      <h2>4. Finalités</h2>
+      <ul>
+        <li>Fournir les fonctions de base du jeu et la progression locale.</li>
+        <li>Activer Google Play Games (connexion et classement).</li>
+        <li>Afficher des annonces récompensées et mesurer leur performance.</li>
+        <li>Prévenir abus, fraude et violations de politique.</li>
+      </ul>
+      <h2>5. Consentement et choix de confidentialité (EEE, Royaume-Uni, Suisse)</h2>
+      <p>Si la loi l'exige, nous demandons le consentement via Google UMP. Vous pouvez rouvrir les options via le bouton Privacy sur le menu principal du jeu.</p>
+      <ul>
+        <li>Consentement accordé ou non requis : les annonces peuvent fonctionner normalement.</li>
+        <li>Consentement non accordé : des annonces non personnalisées/limitées peuvent tout de même être affichées selon Google.</li>
+      </ul>
+      <h2>6. Services tiers</h2>
+      <p>Chroma Core utilise Google Play Games Services et Google AdMob.</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://developer.android.com/games/pgs/terms">Google Play Games Services Terms</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543">AdMob Policy</a></li>
+      </ul>
+      <h2>7. Partage des données</h2>
+      <p>Nous ne vendons pas de données personnelles. Les données nécessaires aux fonctions Google Play Games et à la monétisation publicitaire peuvent être partagées avec Google comme fournisseur de service.</p>
+      <h2>8. Stockage et conservation</h2>
+      <ul>
+        <li>Les données locales du jeu restent sur votre appareil jusqu'à suppression des données de l'app ou désinstallation.</li>
+        <li>Les données Google Play Games et AdMob peuvent être conservées selon les politiques Google.</li>
+        <li>Les demandes support par email peuvent être conservées si nécessaire pour traitement et obligations légales.</li>
+      </ul>
+      <h2>9. Vos droits et demandes de suppression</h2>
+      <p>Canal principal : <a href="https://forms.gle/Xr1puNcL5sDi64fD7">Ouvrir le formulaire de confidentialité</a></p>
+      <p>Canal alternatif (email) : <strong>wcg.privacy@gmail.com</strong></p>
+      <ul>
+        <li>Chroma Core ne collecte aucune télémétrie propre ; il n'existe donc aucun jeu de données côté app lié à une identité réelle que nous pourrions fournir ou supprimer.</li>
+        <li>Si votre demande concerne des données Google Play Games, AdMob ou compte Google, vous pouvez aussi devoir utiliser les outils de compte Google.</li>
+      </ul>
+      <h2>10. Enfants</h2>
+      <p>Chroma Core n'est pas spécifiquement destiné aux enfants de moins de 13 ans.</p>
+      <h2>11. Modifications de cette politique</h2>
+      <p>Nous pouvons mettre à jour cette politique pour changements légaux, techniques ou produit. La version en vigueur sera publiée à cette URL.</p>
+    </section>
+
+    <section class="lang-block" data-lang="de-DE">
+      <h2>Datenschutzerklärung für Chroma Core</h2>
+      <p class="doc-meta">Letzte Aktualisierung: 30. April 2026</p>
+      <p>Danke, dass du Chroma Core spielst. Diese Richtlinie erklärt, welche Daten verarbeitet werden, warum und welche Optionen du hast.</p>
+      <h2>1. Verantwortlicher</h2>
+      <p>Chroma Core<br><strong>Datenschutzkontakt:</strong> wcg.privacy@gmail.com</p>
+      <h2>2. Geltungsbereich</h2>
+      <p>Diese Richtlinie gilt für das Android-Spiel Chroma Core.</p>
+      <h2>3. Daten, die wir verarbeiten können</h2>
+      <ul>
+        <li>Lokal gespeicherte Spieldaten: Highscore, verfügbare Energie, Datum der letzten täglichen Aufladung, Tutorial-Fortschritt und Audio-Einstellungen.</li>
+        <li>Google Play Games Daten (bei Login): Spieler-ID, Profil und Leaderboard-Metadaten.</li>
+        <li>Werbedaten (Google AdMob): Advertising ID / AD_ID und Signale zu Anfrage/Laden/Impression/Interaktion für Rewarded Ads.</li>
+        <li>Ungefährer Standort aus Netzwerk/IP (kein präzises GPS aus der App).</li>
+      </ul>
+      <p><strong>Chroma Core sendet keine eigene Analytics-Telemetrie.</strong> In der App ist kein Firebase Analytics oder vergleichbares SDK eingebettet.</p>
+      <h2>4. Zwecke</h2>
+      <ul>
+        <li>Kernfunktionen des Spiels und lokaler Fortschritt.</li>
+        <li>Google Play Games Funktionen (Login und Leaderboard).</li>
+        <li>Rewarded Ads anzeigen und Anzeigenleistung messen.</li>
+        <li>Missbrauch, Betrug und Richtlinienverstöße verhindern.</li>
+      </ul>
+      <h2>5. Einwilligung und Datenschutzoptionen (EWR, UK, Schweiz)</h2>
+      <p>Wenn gesetzlich erforderlich, fragen wir Einwilligung über Google UMP ab. Datenschutzoptionen kannst du über den Privacy-Button im Hauptmenü des Spiels erneut öffnen.</p>
+      <ul>
+        <li>Einwilligung erteilt oder nicht erforderlich: Anzeigen können normal laufen.</li>
+        <li>Keine Einwilligung: nicht-personalisierte/begrenzte Anzeigen können dennoch angezeigt werden.</li>
+      </ul>
+      <h2>6. Dienste Dritter</h2>
+      <p>Chroma Core nutzt Google Play Games Services und Google AdMob.</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://developer.android.com/games/pgs/terms">Google Play Games Services Terms</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543">AdMob Policy</a></li>
+      </ul>
+      <h2>7. Datenweitergabe</h2>
+      <p>Wir verkaufen keine personenbezogenen Daten. Daten für Google Play Games Funktionen und Werbe-Monetarisierung können mit Google als Dienstleister geteilt werden.</p>
+      <h2>8. Speicherung und Aufbewahrung</h2>
+      <ul>
+        <li>Lokale Spieldaten bleiben auf deinem Gerät bis App-Daten gelöscht oder die App deinstalliert wird.</li>
+        <li>Google Play Games und AdMob Daten können gemäß Google-Richtlinien gespeichert werden.</li>
+        <li>Supportanfragen per E-Mail können zur Bearbeitung und für rechtliche Pflichten gespeichert werden.</li>
+      </ul>
+      <h2>9. Rechte und Löschanfragen</h2>
+      <p>Primärer Kanal: <a href="https://forms.gle/Xr1puNcL5sDi64fD7">Datenschutzformular öffnen</a></p>
+      <p>Alternativer Kanal (E-Mail): <strong>wcg.privacy@gmail.com</strong></p>
+      <ul>
+        <li>Chroma Core erhebt keine eigene Telemetrie, daher gibt es app-seitig keinen Datensatz, der mit einer realen Identität verknüpft ist und den wir bereitstellen oder löschen könnten.</li>
+        <li>Wenn deine Anfrage Google Play Games, AdMob oder Google-Konto Daten betrifft, kann zusätzlich die Nutzung der Google-Kontotools erforderlich sein.</li>
+      </ul>
+      <h2>10. Kinder</h2>
+      <p>Chroma Core richtet sich nicht speziell an Kinder unter 13 Jahren.</p>
+      <h2>11. Änderungen dieser Richtlinie</h2>
+      <p>Wir können diese Richtlinie bei rechtlichen, technischen oder Produktänderungen aktualisieren. Die aktuelle Version wird unter dieser URL veröffentlicht.</p>
+    </section>
+
+  </article>
+
+  <p class="doc-meta" style="margin-top:2rem">
+    Versiones de texto plano por idioma:
+    <a href="privacy/sticky_frog/privacy_es-ES.txt">Sticky Frog</a> ·
+    <a href="privacy/chromacore/privacy_es-ES.txt">Chroma Core</a>
+    (cambia el sufijo <code>_xx-XX.txt</code> según el idioma).
   </p>
 </main>
 
 <footer>
   <div class="container">
-    <p>&copy; <span id="year"></span> Chamo.</p>
+    <p>&copy; <span id="year"></span> Chamo. Contacto: <a href="mailto:chamod3v@gmail.com">chamod3v@gmail.com</a></p>
   </div>
 </footer>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  document.getElementById('updated').textContent = '20 de abril de 2026';
+  (function () {
+    const gameSelect = document.getElementById('game-select');
+    const langSelect = document.getElementById('lang-select');
+    const gameBlocks = Array.from(document.querySelectorAll('.privacy-block'));
+    const allLangBlocks = Array.from(document.querySelectorAll('.lang-block'));
+
+    function applySelection() {
+      const game = gameSelect.value;
+      const lang = langSelect.value;
+      gameBlocks.forEach(g => g.classList.toggle('active', g.dataset.game === game));
+      allLangBlocks.forEach(s => {
+        const parentGame = s.closest('.privacy-block').dataset.game;
+        s.classList.toggle('active', parentGame === game && s.dataset.lang === lang);
+      });
+      document.documentElement.lang = lang;
+      const params = new URLSearchParams(window.location.search);
+      params.set('game', game);
+      params.set('lang', lang);
+      const newUrl = window.location.pathname + '?' + params.toString();
+      window.history.replaceState(null, '', newUrl);
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const games = gameBlocks.map(g => g.dataset.game);
+    const langs = Array.from(new Set(allLangBlocks.map(s => s.dataset.lang)));
+    const qGame = params.get('game');
+    const qLang = params.get('lang');
+    gameSelect.value = games.includes(qGame) ? qGame : 'sticky_frog';
+    langSelect.value = langs.includes(qLang) ? qLang : 'es-ES';
+    applySelection();
+
+    gameSelect.addEventListener('change', applySelection);
+    langSelect.addEventListener('change', applySelection);
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  })();
 </script>
 </body>
 </html>
+
+

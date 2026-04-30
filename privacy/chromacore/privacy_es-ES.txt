@@ -1,0 +1,78 @@
+Politica de Privacidad de ChromaCore
+Ultima actualizacion: 30 de abril de 2026
+
+Gracias por jugar a ChromaCore. Esta politica explica que datos se tratan, para que se usan y que opciones tienes.
+
+1. Responsable
+ChromaCore
+Contacto de privacidad: wcg.privacy@gmail.com
+
+2. Alcance
+Esta politica aplica al juego ChromaCore para Android.
+
+3. Datos que podemos tratar
+A) Datos del juego (locales)
+- Record de puntuacion, energia disponible, fecha de la ultima recarga diaria, progreso del tutorial y ajustes de audio.
+
+B) Datos de Google Play Games (si inicias sesion)
+- Identificador de jugador de Google Play Games y nombre de perfil.
+- Envio de puntuaciones al ranking y metadatos relacionados.
+
+C) Datos de publicidad y monetizacion (Google AdMob)
+- Advertising ID / AD_ID e identificadores de dispositivo usados por SDKs de publicidad de Google.
+- Senales de solicitud, carga, impresion e interaccion con anuncios recompensados.
+- Ubicacion aproximada inferida por red/IP (la app no usa GPS preciso).
+
+D) Telemetria analitica propia
+- Ninguna. ChromaCore no envia telemetria analitica propia. No hay Firebase Analytics ni equivalente integrado en la app.
+
+4. Finalidades
+Tratamos datos para:
+- Proporcionar funciones base del juego y progreso local.
+- Habilitar funciones de Google Play Games (login y ranking).
+- Mostrar anuncios recompensados y medir su rendimiento.
+- Prevenir abuso, fraude e incumplimientos de politica.
+
+5. Consentimiento y opciones de privacidad (EEE, Reino Unido y Suiza)
+Cuando la ley lo exige, solicitamos consentimiento mediante Google UMP (User Messaging Platform).
+Puedes volver a abrir las opciones de privacidad desde el boton Privacidad en el menu principal del juego.
+
+Comportamiento importante en esta app:
+- Si el consentimiento esta otorgado o no es necesario, los anuncios pueden funcionar con normalidad.
+- Si el consentimiento no esta otorgado, aun pueden mostrarse anuncios no personalizados o limitados, segun configuracion y disponibilidad de Google.
+
+6. Servicios de terceros
+ChromaCore usa servicios de Google:
+- Google Play Games Services
+- Google AdMob
+
+El tratamiento de Google se rige por sus propias politicas:
+- Politica de Privacidad de Google: https://policies.google.com/privacy
+- Terminos de Google Play Games Services: https://developer.android.com/games/pgs/terms
+- Politica de AdMob: https://support.google.com/admob/answer/6128543
+
+7. Comparticion de datos
+No vendemos datos personales.
+Los datos necesarios para ofrecer funciones de Google Play Games y monetizacion por anuncios pueden compartirse con Google como proveedor de servicio.
+
+8. Almacenamiento y conservacion
+- Los datos locales del juego se guardan en tu dispositivo hasta que borres datos de la app o la desinstales.
+- Los datos de Google Play Games y AdMob pueden conservarse segun las politicas de Google.
+- Las solicitudes de soporte por email pueden conservarse el tiempo necesario para resolver tu solicitud y cumplir obligaciones legales.
+
+9. Tus derechos y solicitudes de eliminacion
+Canal principal (portal de solicitudes):
+https://forms.gle/Xr1puNcL5sDi64fD7
+
+Canal alternativo (email de respaldo):
+wcg.privacy@gmail.com
+
+Importante sobre identificacion:
+- ChromaCore no recopila telemetria propia, por lo que no existe en el lado de la app un conjunto de datos vinculado a una identidad real que podamos entregar o borrar.
+- Si tu solicitud afecta a datos en Google Play Games, AdMob o cuenta Google, tambien puede ser necesario usar las herramientas de control de cuenta de Google.
+
+10. Menores
+ChromaCore no esta dirigido especificamente a menores de 13 anos.
+
+11. Cambios en esta politica
+Podemos actualizar esta politica para reflejar cambios legales, tecnicos o de producto. La version vigente se publicara en esta URL.
