@@ -62,7 +62,7 @@ Data required for Google Play Games features and ad monetisation may be shared w
 
 9. Your rights and deletion requests
 Primary channel (request portal):
-https://forms.gle/Xr1puNcL5sDi64fD7
+https://forms.gle/MkvDANMhpmfV3eP59
 
 Backup channel (email):
 chamod3v@gmail.com
@@ -76,4 +76,5 @@ ChromaCore is not specifically directed to children under 13.
 
 11. Changes to this policy
 We may update this policy for legal, technical or product changes. The latest version will be published at this URL.
+
 

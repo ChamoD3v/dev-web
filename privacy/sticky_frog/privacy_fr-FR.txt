@@ -60,7 +60,7 @@ Les donnees necessaires aux fonctions Google Play Games et a la monetisation pub
 
 9. Vos droits et demandes de suppression
 Canal principal (portail de demandes) :
-https://forms.gle/Xr1puNcL5sDi64fD7
+https://forms.gle/MkvDANMhpmfV3eP59
 
 Canal alternatif (email de secours) :
 chamod3v@gmail.com
@@ -72,4 +72,5 @@ Sticky Frog n'est pas specifiquement destine aux enfants de moins de 13 ans.
 
 11. Modifications de cette politique
 Nous pouvons mettre a jour cette politique pour refleter des changements legaux, techniques ou produit. La version en vigueur sera publiee a cette URL.
+
 

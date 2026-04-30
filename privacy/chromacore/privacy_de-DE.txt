@@ -62,7 +62,7 @@ Daten, die fur Google Play Games Funktionen und Werbe-Monetarisierung erforderli
 
 9. Rechte und Loeschanfragen
 Primaerer Kanal (Anfrageportal):
-https://forms.gle/Xr1puNcL5sDi64fD7
+https://forms.gle/MkvDANMhpmfV3eP59
 
 Alternativer Kanal (Backup-E-Mail):
 chamod3v@gmail.com
@@ -76,4 +76,5 @@ ChromaCore richtet sich nicht speziell an Kinder unter 13 Jahren.
 
 11. Aenderungen dieser Richtlinie
 Wir koennen diese Richtlinie bei rechtlichen, technischen oder Produktaenderungen aktualisieren. Die aktuelle Version wird unter dieser URL veroeffentlicht.
+
 

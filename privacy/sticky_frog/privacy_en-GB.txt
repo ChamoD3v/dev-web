@@ -60,7 +60,7 @@ Data needed to provide Google Play Games and ad monetisation features may be sha
 
 9. Your rights and deletion requests
 Primary channel (request portal):
-https://forms.gle/Xr1puNcL5sDi64fD7
+https://forms.gle/MkvDANMhpmfV3eP59
 
 Backup channel (email):
 chamod3v@gmail.com
@@ -76,4 +76,5 @@ Sticky Frog is not specifically directed to children under 13.
 
 11. Changes to this policy
 We may update this policy to reflect legal, technical or product changes. The latest version will be published at this URL.
+
 
