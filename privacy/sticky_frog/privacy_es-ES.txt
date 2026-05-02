@@ -28,7 +28,7 @@ C) Datos de publicidad y monetizacion (Google AdMob)
 Tratamos datos para:
 - Proporcionar funciones base del juego y progreso local.
 - Habilitar funciones de Google Play Games (login, ranking, guardado en la nube).
-- Mostrar anuncios (interstitial y rewarded) y medir su rendimiento.
+- Mostrar anuncios rewarded y medir su rendimiento.
 - Prevenir abuso, fraude e incumplimientos de politica.
 
 5. Consentimiento y opciones de privacidad (EEE, Reino Unido y Suiza)

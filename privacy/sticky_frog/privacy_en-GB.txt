@@ -28,7 +28,7 @@ C) Advertising and monetisation data (Google AdMob)
 We process data to:
 - Provide core game features and local progress.
 - Enable Google Play Games features (sign-in, leaderboard, cloud save).
-- Show ads (interstitial and rewarded) and measure ad performance.
+- Show rewarded ads and measure ad performance.
 - Prevent abuse, fraud and policy violations.
 
 5. Consent and privacy choices (EEA, UK, Switzerland)
